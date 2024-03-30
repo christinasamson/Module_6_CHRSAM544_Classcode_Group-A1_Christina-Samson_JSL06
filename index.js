@@ -11,11 +11,11 @@ function displayMenuItems(menu) {
 
     // Loop through each category and its items in the menu object to focus on the keys
     for (const category in menu) {
-        // Create an element to represent the category
+        // an element to represent the category
         const categoryElement = document.createElement('div');
         categoryElement.innerHTML = `<h3>${category}</h3>`;
 
-        // Create an element to represent a list of items
+        //  an element to represent a list of items
         const itemListElement = document.createElement('ul');
 
         // Loop through the items in the category and create list items
@@ -58,7 +58,7 @@ function addToOrder(itemName) {
     // Calculate and update the total price (assuming each item costs $10)
     const totalPrice = orderItemsList.children.length * 10;
 
-    // Update the text content of the order total element with the new total
+
     orderTotalElement.textContent = totalPrice.toFixed(2);
 }
 
